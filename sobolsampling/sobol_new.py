@@ -1,6 +1,4 @@
 import numpy as np
-import pandas as pd
-
 
 def sobol_points(n, d):
     """
@@ -19,7 +17,7 @@ def sobol_points(n, d):
     n = int(n)
     d = int(d)
 
-    soboldir = pd.read_csv('sobolcoeff.csv')
+    soboldir = np.loadtxt('sobolcoeff.csv',delimiter=',', dtype='str', skiprows=1)
 
     # ll = number of bits needed
     ll = int(np.ceil(np.log(n)/np.log(2.0)))
@@ -60,10 +58,10 @@ def sobol_points(n, d):
     for j in range(1, d):
 
         # read parameters from file
-        dd = int(soboldir.iloc[j - 1]['d'])
-        s = int(soboldir.iloc[j - 1]['s'])
-        a = int(soboldir.iloc[j - 1]['a'])
-        mm = soboldir.iloc[j - 1]['m_i']
+        dd = int(soboldir[j - 1, 0])
+        s = int(soboldir[j - 1, 1])
+        a = int(soboldir[j - 1, 2])
+        mm = soboldir[j - 1,3]
         mm = mm.split()
         m = np.array([0]+mm).astype(int)
 
