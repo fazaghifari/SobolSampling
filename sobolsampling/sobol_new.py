@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 def sobol_points(n, d):
     """
@@ -17,7 +18,9 @@ def sobol_points(n, d):
     n = int(n)
     d = int(d)
 
-    soboldir = np.loadtxt('sobolcoeff.csv',delimiter=',', dtype='str', skiprows=1)
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    path = os.path.join(my_path, "./sobolcoeff.csv")
+    soboldir = np.loadtxt(path,delimiter=',', dtype='str', skiprows=1)
 
     # ll = number of bits needed
     ll = int(np.ceil(np.log(n)/np.log(2.0)))
