@@ -98,5 +98,5 @@ def sobol_points(n, d):
 
 
 if __name__ == "__main__":
-    point = sobol_points(10, 3)
+    point = sobol_points(10, 21201)
     print(point)
