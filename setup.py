@@ -19,7 +19,7 @@ This Python function was translated from the original c++ program by Frances Kuo
 
 metadata = dict(
     name='sobolsampling',
-    version='0.1.1',
+    version='0.1.2',
     description='Sobol Sampling Package',
     long_description=LONG_DESCRIPTION,
     author='Ghifari Adam F',
