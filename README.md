@@ -7,7 +7,14 @@ Sobol Sampling
 This Python function was translated from the original c++ program by Frances Kuo and Stephen Joe https://web.maths.unsw.edu.au/~fkuo/sobol/
 
 # Dependencies
-This function requires numpy and pandas to run.
+This function requires numpy to run.
+
+# Installation
+Sobol Sampling works with Python 3, to install write:
+
+```
+pip install sobolsampling
+```
 
 # Usage
 ```{python}
