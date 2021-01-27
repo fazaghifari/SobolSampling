@@ -18,6 +18,8 @@ pip install sobolsampling
 
 # Usage
 ```{python}
+from sobolsampling.sobol_new import sobol_points
+
 nsamp = 10  # The number of points
 dim = 3  # The dimension
 points = sobol_points(nsamp, dim)
