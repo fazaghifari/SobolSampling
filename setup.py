@@ -19,7 +19,7 @@ This Python function was translated from the original c++ program by Frances Kuo
 
 metadata = dict(
     name='sobolsampling',
-    version='0.1.2',
+    version='0.1.3',
     description='Sobol Sampling Package',
     long_description=LONG_DESCRIPTION,
     author='Ghifari Adam F',
@@ -31,7 +31,7 @@ metadata = dict(
     install_requires=[
         'numpy'
     ],
-    python_requires='>=3.6.*',
+    python_requires='>=3.6',
     zip_safe=False,
     include_package_data=True,
     url = 'https://github.com/fazaghifari/SobolSampling', # use the URL to the github repo
